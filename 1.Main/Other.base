@@ -5,6 +5,7 @@ views:
       and:
         - file.ext == "md"
         - '!file.tags.containsAny("Status/Maintenance", "Status/Active")'
+        - '!file.tags.contains("Disambiguation")'
     sort:
       - property: file.name
         direction: DESC
