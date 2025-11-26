@@ -4,6 +4,7 @@ views:
     filters:
       and:
         - file.ext == "md"
+        - '!file.tags.containsAny("Status/Maintenance", "Status/Active")'
     sort:
       - property: file.name
         direction: DESC
