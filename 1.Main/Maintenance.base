@@ -1,0 +1,12 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.ext == "md"
+        - file.tags.contains("Status/Maintenance")
+    sort:
+      - property: file.name
+        direction: DESC
+  - type: table
+    name: View
